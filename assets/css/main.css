@@ -26,8 +26,9 @@ p {
 /* Container */
 .container {
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 
@@ -125,6 +126,7 @@ p {
 	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
+	text-align: center;
 	transition: background .1s linear;
 }
 
@@ -134,6 +136,10 @@ p {
 
 .btn--red:hover {
 	background-color: #dd3434;
+}
+
+.btn--long {
+	min-width: 280px;
 }
 
 /* Features */
@@ -232,4 +238,255 @@ p {
 	font-size: 14px;
 	font-weight: 400;
 	color: #fff;	
+}
+
+/* Team */
+.team {
+	margin: 100px 0 70px;
+}
+
+.team__inner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.team__item {
+	margin-bottom: 30px;
+	width: 25%;
+	padding: 0 15px;
+}
+
+.team__photo {
+	margin-bottom: 20px;
+	display: block;
+	max-width: 100%;
+	height: auto; 
+}
+
+.team__name {
+	margin-bottom: 8px;
+	font-size: 22px;
+	color: #2d3033;
+}
+
+.team__prof {
+	margin-bottom: 15px;
+	font-size: 13px;
+	color: #e84545;
+	text-transform: uppercase;
+}
+
+.team__text {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #6c7279;
+}
+
+/* Social */
+.social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.social--footer {
+	justify-content: center;
+}
+
+.social__item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 4px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #e8ecee;
+	background-color: #fff;
+	transition: background .1s linear;
+}
+
+.social--footer .social__item {
+	background: transparent;
+	border-width: 2px;
+	border-color: #fff;
+	border-radius: 2px;
+}
+
+.social__item:hover {
+	background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+	fill: #000;
+} 
+
+/*.social__item img {
+	width: 18px;
+	height: auto;
+}*/
+
+.social__icon {
+	display: block;
+	height: 18px;
+	fill: #c6cacc;
+	transition: fill .1s linear;
+}
+
+.social--footer .social__icon {
+	fill: #fff;
+}
+
+/* Reviews */
+.reviews {
+	background-color: #53354a;
+	overflow: hidden;
+}
+
+.reviews__item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reviews__photo {
+	width: 50%;
+	height: 500px;
+	position: relative;
+}
+
+.reviews__img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+
+.reviews__content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 80px;
+	width: 50%;
+}
+
+.reviews__text {
+	margin-bottom: 25px;
+	font-family: 'Cardo', sans-serif;
+	font-style: italic;
+	color: #fff;
+	font-size: 36px;
+	line-height: 1.2;
+}
+
+.reviews__author {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* Download */ 
+.download {
+	margin: 90px 0;
+	text-align: center;
+}
+
+.download__title {
+	margin-bottom: 10px;
+	font-size: 28px;
+	color: #2d3033;
+	font-weight: 300;
+}
+
+.download__text {
+	margin-bottom: 30px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #2d3033;
+}
+
+/* Footer */
+.footer {
+	background-color: #3a3e64;
+}
+
+.footer__inner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 70px 0;
+}
+
+.footer__block {
+	width: 33.33333%;
+	padding: 0 15px;
+	text-align: center;
+}
+
+.footer__title {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.footer__address {
+	font-size: 14px;
+	line-height: 1.5;
+	font-style: normal;
+	color: #fff;
+	opacity: .5;
+}
+
+.footer__text {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #fff;
+	opacity: .5;
+}
+
+/* Copyright */
+.copyright {
+	padding: 20px 0;
+	background-color: #313454;
+}
+
+.copyright__text {
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+	color: #808080;
+}
+
+.copyright__text span {
+	color: #fff;
+}
+
+.copyright__text .heart{
+	color: red;
 }
