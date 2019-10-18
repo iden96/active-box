@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #6c7279;
+	background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 10px;	
+}
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 35px 0;
+	border-bottom: 1px solid #515369;
+}
+
+/* Nav */
+.nav {
+	font-size: 13px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	margin-left: 50px;
+	color: inherit;
+	text-decoration: none;
+	opacity: .75;
+	transition: opacity 0.1s linear;
+}
+
+.nav__link:first-child {
+	margin-left: 0;	
+}
+
+.nav__link:hover {
+	opacity: 1;
+}
+
+/* Intro */
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 750px;
+	background: #31344e 
+				url("../images/intro.jpg")
+				center no-repeat / cover;
+	padding-top: 100px;
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro__title {
+	margin-bottom: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 65px;
+	line-height: 1.1;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;	
+}
+
+.intro__suptitle {
+	margin-bottom: 60px;
+	font-size: 22px;
+	color: #fff;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+/* Button */
+.btn {
+	display: inline-block;
+	padding: 14px 40px;
+	border: 0;
+	cursor: pointer;
+	border-radius: 2px;
+	vertical-align: top;
+	font-family: inherit;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background .1s linear;
+}
+
+.btn--red {
+	background-color: #e84545;
+}
+
+.btn--red:hover {
+	background-color: #dd3434;
+}
